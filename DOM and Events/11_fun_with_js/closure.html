@@ -1,3 +1,7 @@
+<!-- A closure is the combination of a function bundled together (enclosed) with references to its
+surrounding state (the lexical environment). In other words, a closure gives you access to an
+outer function's scope from an inner function. In JavaScript, closures are created every time
+a function is created, at function creation time. -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -38,13 +42,16 @@
     // outer()
     // console.log("TOO OUTER", username);
 
-
+//CLOSURE
     // function makeFunc() {
     //     const name = "Mozilla";
     //     function displayName() {
     //         console.log(name);
     //     }
-    //     return displayName;
+    //     return displayName;  //not only displayName but the scope of the outer fn if it exists(it does here)
+           //gets returned  along with it (due to lexical scoping) and gets stored in the meory referenced by 
+           //myFunc constant below
+    //In summary not only the execution context of the fn but its whole lexical scope gets shared in memory       
     // }
 
     // const myFunc = makeFunc();

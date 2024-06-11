@@ -1,3 +1,4 @@
+//implementing getters and setters in constructor functions instead of classes
 function User(email, password){
     this._email = email;
     this._password = password
