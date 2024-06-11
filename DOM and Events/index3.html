@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur Code</title>
+</head>
+<body style="background-color: #212121; color: white;">
+    <script>
+        const myDiv=document.createElement("div");
+        console.log(myDiv);
+        myDiv.className="main";
+        myDiv.id-Math.round(Math.random()*10+1);
+        myDiv.setAttribute('title',"generated title");
+        myDiv.style.color="red";
+        myDiv.style.padding="10px";
+        // myDiv.innerText="Chai aur Code"
+        //setting properties like this instead of setAttribute leads to it calling
+        //the existing text then overwrites it with the new one while setAttribute works one way
+        //seeting the key-value directly without calling it 
+
+        const text=document.createTextNode("Chai aur Code");
+        myDiv.appendChild(text);
+        document.body.appendChild(myDiv);
+    </script>
+</body>
+</html>

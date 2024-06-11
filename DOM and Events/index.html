@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+    </head>
+
+    <body>
+	<div id="main" class="bg-black">
+	    <p>Lorem ipsum dolor sit amet.</p>
+	    <h1 class="heading">DOM learning on Chai aur Code</h1>
+	    <input type="password">
+	</div>
+	<ul>
+	    <li>1</li>
+	    <li>2</li>
+	    <li>3</li>
+	</ul>
+	<script>
+	    console.log(window.document) //same as document
+	    console.dir(document);
+	    const input=document.querySelector('input[type="password"]');
+	    const para=document.querySelector('p:first-child');
+	    console.log(input);
+	    console.log(para);
+	    setTimeout(()=>{
+		const main=document.getElementById("main");
+    		main.innerHTML=main.innerHTML+"<h3>Hello There!</h3>"
+	    },5000)
+	</script>
+    </body>
+
+</html>
