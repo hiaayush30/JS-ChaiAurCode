@@ -29,7 +29,7 @@ function User(username, loginCount, isLoggedIn){
 
     }
 
-    return this
+    return this  //not required gen
 }
 //calling the constructor fn without 'new' will lead to 'this' pointing to the global object(as in normal fns)
 //and the properties will be set globally instead of creating an object
